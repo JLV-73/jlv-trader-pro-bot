@@ -177,5 +177,7 @@ async def analyse_cmd(interaction: discord.Interaction, days: app_commands.Range
     )
     await interaction.followup.send(msg)
 
-@client.tree.command(name="prediction", description="Projection (24–72h) heuristique")
-async def prediction_cmd(interaction: discord.Inte_
+@bot.tree.command(name="prediction", description="Analyse BTC")
+async def prediction_cmd(interaction: discord.Interaction):
+    await interaction.response.send_message("Analyse en cours…")
+
